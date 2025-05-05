@@ -116,6 +116,8 @@ async def manage_order(symbol: str, action: str, quantity: int, price: int, db: 
                 order_type  = "limit"
             )
 
+            
+
             if orderResponse.get("success") == False:
                 print(f"Order replacement failed: {orderResponse.get('data', 'No reason')}")
                 data = orderResponse.get("data", {})
