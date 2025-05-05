@@ -1,0 +1,22 @@
+[
+    {
+      "asset_id": "1cf35270-99ee-44e2-a77f-6fab902c7f80",
+      "symbol": "SOLUSD",
+      "exchange": "CRYPTO",
+      "asset_class": "crypto",
+      "asset_marginable": false,
+      "qty": "0.33361204",
+      "avg_entry_price": "149.383",
+      "side": "long",
+      "market_value": "49.543056",
+      "cost_basis": "49.835967",
+      "unrealized_pl": "-0.292911",
+      "unrealized_plpc": "-0.0058775020859934",
+      "unrealized_intraday_pl": "-0.292911",
+      "unrealized_intraday_plpc": "-0.0058775020859934",
+      "current_price": "148.505",
+      "lastday_price": "147.703",
+      "change_today": "0.0054298152373344",
+      "qty_available": "0.33361204"
+    }
+  ]

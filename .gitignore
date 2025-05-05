@@ -1,0 +1,57 @@
+# Environment variables
+.env
+
+# Dependency directories
+node_modules
+
+# Build output
+dist/
+coverage/
+
+# Package locks
+package-lock.json
+yarn.lock
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Database files
+*.db
+*.sqlite
+
+# Archives and compressed files
+*.zip
+*.rar
+*.tar.gz
+*.tgz
+
+# Media files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+
+# Misc
+*.log
+
+
+
+# Python virtual environments
+venv
+__pycache__/
+
+
+# Excutable files
+*.exe
