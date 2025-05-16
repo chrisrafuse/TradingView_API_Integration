@@ -1,5 +1,70 @@
 ## TradingView API Integration
 
+A full-stack reference implementation demonstrating how to ingest, store and display live TradingView financial data through a Python backend and TypeScript frontend.
+
+---
+
+### 🔧 Tech Stack
+
+- **Backend:**  
+  - Python (Flask) with SQLAlchemy & Alembic migrations (`app/`, `migrations/`)  
+  - Data ingestion modules in `datas/` for fetching symbols, quotes, and historical bars  
+  - Custom alert generator in `fakeAlert/` for simulating TradingView webhook events  
+- **Frontend:**  
+  - TypeScript + React (`frontend/`)  
+  - Live charts and data tables powered by TradingView widget embedding  
+  - CSS for responsive layouts  
+- **Persistence:**  
+  - Relational database (configured via `alembic.ini` & `requirements.txt`)  
+  - Migrations managed with Alembic  
+- **DevOps:**  
+  - Dependencies listed in `requirements.txt`  
+  - `.gitignore` to exclude config secrets and compiled assets  
+
+---
+
+### 🚀 Features
+
+1. **Real-time Data Fetching**  
+   - Pulls symbol metadata and streaming price updates from TradingView’s REST endpoints  
+2. **Historical Bar Storage**  
+   - Archives OHLCV data into a local database for backtesting or analytics  
+3. **Alert Simulation**  
+   - Generates webhook-style alerts to exercise end-to-end alert-handling logic  
+4. **Interactive Dashboard**  
+   - Embeds TradingView’s charting library alongside custom UI components for filtering and drill-downs  
+
+---
+
+### 🏃‍♂️ Get Started
+
+1. **Clone & install**  
+   ```bash
+   git clone https://github.com/chrisrafuse/TradingView_API_Integration.git
+   cd TradingView_API_Integration
+   pip install -r requirements.txt
+   npm install --prefix frontend
+   ```
+
+2. **Run migrations**
+
+   ```bash
+   alembic upgrade head
+   ```
+3. **Start services**
+
+   ```bash
+   # Backend (Python)
+   python -m app.main
+
+   # Frontend (React)
+   npm start --prefix frontend
+   ```
+
+---
+
+## TradingView API Integration
+
 A lightweight web application illustrating how to integrate the TradingView Charting Library with a back-end API for live market data, extended chart features, and custom indicators.
 
 ---
@@ -79,3 +144,8 @@ app/
 ---
 
 > *This demo app serves as a foundation — extend it with advanced chart controls, user authentication, and deeper PineScript integration to build fully-featured trading dashboards.*
+
+### ✉️ Contact
+Chris Rafuse – [berabyte1024@gmail.com](berabyte1024@gmail.com)
+LinkedIn: [chris-rafuse](https://www.linkedin.com/in/chris-rafuse-80695892/)
+
