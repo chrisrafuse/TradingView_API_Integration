@@ -146,6 +146,6 @@ app/
 > *This demo app serves as a foundation — extend it with advanced chart controls, user authentication, and deeper PineScript integration to build fully-featured trading dashboards.*
 
 ### ✉️ Contact
-Chris Rafuse – [berabyte1024@gmail.com](berabyte1024@gmail.com)
+Chris Rafuse – [berabyte1024@gmail.com](mailto:berabyte1024@gmail.com) | 
 LinkedIn: [chris-rafuse](https://www.linkedin.com/in/chris-rafuse-80695892/)
 
