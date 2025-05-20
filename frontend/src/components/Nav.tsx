@@ -15,7 +15,8 @@ function Nav() {
       <Link className="mr-4" to="/positions">
         Positions
       </Link>
-      <Link to="/webhooks">Webhooks</Link>
+      <Link className="mr-4" to="/webhooks">Webhooks</Link>
+      <Link to="/profits">Profits</Link>
     </nav>
     </div>
   );

@@ -36,7 +36,7 @@ function Webhooks() {
     try {
       setLoading(true);
       const response = await axios.get<LogType[]>(
-        "/api/webhooks/db"
+        "http://localhost:8000/api/webhooks/db"
       );
       console.log(response.data);
       let data = response.data.sort((a, b) => {

@@ -5,6 +5,7 @@ import Webhooks from "./pages/Webhooks";
 import Nav from "./components/Nav";
 import Orders from "./pages/Orders";
 import Positions from "./pages/Positions";
+import Profits from "./pages/Profits"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/webhooks" element={<Webhooks />} />
           <Route path="/positions" element={<Positions />} />
+          <Route path="/profits" element={<Profits />} />
         </Routes>      
     </BrowserRouter>
     </div>
