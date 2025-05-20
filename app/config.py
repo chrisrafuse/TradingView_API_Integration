@@ -10,6 +10,6 @@ class Settings:
     ALPACA_DATA_URL: str = "https://data.alpaca.markets"
     WEBHOOK_SECRET: str = os.getenv("WEBHOOK_SECRET", "supersecret")
     RETRY_LIMIT: int = 2
-    RETRY_BACKOFF_SECONDS: int = 2
+    RETRY_BACKOFF_SECONDS: int = 5
 
 settings = Settings()

@@ -30,7 +30,7 @@ function Positions() {
     try {
       setLoading(true);
       const response = await axios.get<LogType[]>(
-        "/api/positions/live"
+        "http://localhost:8000/api/positions/live"
       );
       setLogs(response.data);
       setError(null);

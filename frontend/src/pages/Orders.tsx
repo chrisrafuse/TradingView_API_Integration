@@ -9,7 +9,7 @@ type LogType = {
   price: number;
   date: string;
   type: string;
-  status: "failed" | "polling" | "filled" | "expiry";
+  status: string;
   limitPrice: number;
   position_intent: string;
 };
@@ -34,9 +34,11 @@ function App() {
     try {
       setLoading(true);
       const response = await axios.get<LogType[]>(
-        "/api/orders/live"
+        "http://localhost:8000/api/orders/live"
       );
-      setLogs(response.data);
+      let data = response.data;
+      data = data.filter((log) => log.status !== "canceled");
+      setLogs(data);
       setError(null);
     } catch (err) {
       setError("Failed to fetch orders");

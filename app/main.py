@@ -3,7 +3,7 @@ from app.schemas import TradingViewWebhook, OrderResponse
 
 from app.alpaca_client import AlpacaClient
 from app.config import settings
-from app.routers import orders, webhooks, positions
+from app.routers import orders, webhooks, positions, json
 from . import models
 from sqlalchemy.orm import Session
 from app.database import get_db, SessionLocal, engine
@@ -31,6 +31,7 @@ app.mount("/assets", StaticFiles(directory="frontend/dist/assets"), name="assets
 app.include_router(orders.router, prefix="/api/orders", tags=["orders"])
 app.include_router(webhooks.router, prefix="/api/webhooks", tags=["webhooks"])
 app.include_router(positions.router, prefix="/api/positions", tags=["positions"])
+app.include_router(json.router, prefix="/api/json", tags=["json"])
 
 @app.get("/{full_path:path}")
 async def catch_all(full_path: str, request: Request):
